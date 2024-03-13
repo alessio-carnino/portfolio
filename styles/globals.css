@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  background-color: white;
+  @apply text-blue-text;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.section {
+  @apply py-28;
+}
+
+.container_S {
+  @apply mx-auto w-[900px] max-w-86%;
+}
+
+.container {
+  @apply mx-auto w-1218px max-w-86%;
+}
+
+.container_L {
+  @apply mx-auto w-1420px max-w-86%;
+}
+
+.title_L {
+  @apply text-6xl  text-blue-title;
+}
+
+.title_M {
+  @apply text-5xl font-bold text-blue-title;
+}
+
+.title_S {
+  @apply text-3xl font-bold text-blue-title;
+}
+
+.title_XS {
+  @apply text-2xl font-medium text-blue-title;
+}
+
+.paragraph_L {
+  @apply text-2xl;
+}
+
+.paragraph_M {
+  @apply text-lg;
+}
+
+.paragraph_S {
+  @apply text-base;
+}
+
+.paragraph_XS {
+  @apply text-sm;
+}
+
+.button {
+  @apply bg-blue-text text-white py-2 px-5 flex items-center gap-2;
+}
+
+.button.secondary {
+  @apply bg-slate-400 text-white;
+}
+
+.image_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gradient {
+  @apply bg-gradient-to-br from-gradient-start to-gradient-end text-transparent bg-clip-text;
+}
+
+.brand {
+  position: relative;
+  width: 222px;
+  height: 43px;
+}
+
+.hero_img_wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 36vw;
+  max-height: 900px;
+}
+
+.blob_img_1 {
+  position: absolute;
+  top: 10%;
+  right: 80vw;
+  z-index: -1;
+}
+
+.blob_img_2 {
+  position: absolute;
+  top: 60%;
+  left: 80vw;
+  z-index: -1;
+}

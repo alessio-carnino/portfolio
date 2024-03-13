@@ -1,113 +1,120 @@
+import ProjectCard from "@/components/ProjectCard";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+const logos = [
+  "/assets/images/html.svg",
+  "/assets/images/css.svg",
+  "/assets/images/js.svg",
+  "/assets/images/react.svg",
+  "/assets/images/gitt.svg",
+  "/assets/images/bootstrap.svg",
+  "/assets/images/tailwind.svg",
+  "/assets/images/sass.svg",
+  "/assets/images/git.svg",
+  "/assets/images/vsc.svg",
+  "/assets/images/node.svg",
+  "/assets/images/mongo.svg",
+];
+
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <>
+      <section className="section py-14">
+        <div className="container_L grid grid-cols-2 items-center">
+          <div className="hero_content mb-8">
+            <h1 className="title_L">
+              Hi 👋, <br /> My name is
+              <br />
+              <span className="font-semibold gradient">
+                Alessio Carnino
+              </span>{" "}
+              <br />
+              build things for web
+            </h1>
+          </div>
+
+          <div className="hero_img_wrapper">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/assets/images/hero-img-min.png"
+              alt="Alessio Carnino profile image"
+              layout="fill"
+              sizes="100%"
+              objectFit="contain"
             />
-          </a>
+          </div>
         </div>
-      </div>
+      </section>
+      <section className="section">
+        <div className="container ">
+          <h2 className="title_M text-center mb-6">My Tech Stack</h2>
+          <p className="text-center mb-20">
+            Technologies I've been working with recently
+          </p>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+          <div className="grid grid-cols-6 gap-x-20 gap-y-14">
+            {logos.map((logo, index) => (
+              <img key={`logo-${index}`} src={logo} alt="logo" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section relative" id="projects">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className="blob_img_1"
+          src="/assets/images/blob-1.png"
+          alt="logo"
+          width={457}
+          height={447}
         />
-      </div>
+        <Image
+          className="blob_img_2"
+          src="/assets/images/blob-2.png"
+          alt="logo"
+          width={494.73}
+          height={464.79}
+        />
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="container">
+          <h2 className="title_M text-center mb-6">Projects</h2>
+          <p className="text-center mb-20">Things I've built so far</p>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="flex flex-col gap-10">
+            <ProjectCard
+              title="iNSPiRED"
+              desc="descergerjon"
+              img="/assets/images/img1.jpg"
+              stack="HTML, JavaScript, SASS, React"
+              page="/project1"
+              website="https://alessiocarnino.webflow.io/"
+              github="https://github.com/paininoa"
+            />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+            <ProjectCard
+              title="Promptopia"
+              desc="descergerjon"
+              img="/assets/images/img2.jpg"
+              stack="HTML, JavaScript, SASS, React"
+              page="/project2"
+              website="https://alessiocarnino.webflow.io/"
+              github="https://github.com/paininoa"
+            />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <ProjectCard
+              title="Title3"
+              desc="descergerjon"
+              img="/assets/images/img3.jpg"
+              stack="HTML, JavaScript, SASS, React"
+              page="/project3"
+              website="https://alessiocarnino.webflow.io/"
+              github="https://github.com/paininoa"
+            />
+          </div>
+        </div>
+      </section>
+    </>
   );
-}
+};
+
+export default Home;

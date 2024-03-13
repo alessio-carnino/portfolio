@@ -7,10 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "blue-title": "#1E0E62",
+        "blue-text": "#212733",
+        "gradient-start": "#4E65FF",
+        "gradient-end": "#92EFFD",
+      },
+      fontSize: {
+        "5.5xl": "3.5rem",
+      },
+      fontFamily: {
+        maven_pro: ["Maven_Pro", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
+      },
+
+      width: {
+        "1218px": "76.125rem",
+        "1420px": "88.75rem",
+      },
+      maxWidth: {
+        "86%": "86%",
       },
     },
   },
