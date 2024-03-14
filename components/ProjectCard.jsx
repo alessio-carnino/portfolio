@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const ProjectCard = ({ title, desc, img, stack, page, website, github }) => {
   return (
-    <div className="flex bg-white drop-shadow-2xl border-r rounded-3xl overflow-hidden">
-      <a className="w-6/12 relative" href={page}>
+    <div className="flex flex-col sm:flex-row bg-white drop-shadow-2xl rounded-2xl md:rounded-3xl overflow-hidden">
+      <a className="w-full h-[42vw] sm:w-6/12 sm:h-[auto] relative" href={page}>
         <Image
           className="inline-block"
           src={img}
@@ -12,9 +12,9 @@ const ProjectCard = ({ title, desc, img, stack, page, website, github }) => {
           objectFit="cover"
         />
       </a>
-      <div className="w-6/12 p-10">
+      <div className="w-full sm:w-6/12 p-6 md:p-10">
         <a href={page}>
-          <h3 className="title_XS mb-4">{title}</h3>
+          <h3 className="title_XS mb-3 md:mb-4">{title}</h3>
         </a>
         <p className="mb-2">{desc}</p>
         <p className="paragraph_S mb-3">

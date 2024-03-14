@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section className="py-10">
       <div className="container_L flex flex-col">
-        <div className="flex items-center justify-between gap-5">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
           <Link href="/" className="brand">
             <Image
               src="/assets/images/logo.svg"
@@ -15,18 +15,18 @@ const Footer = () => {
             />
           </Link>
 
-          <div className="flex gap-10">
-            <Link href="/#projects" className="">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 md:gap-10">
+            <Link href="/#projects" className="navlink">
               Projects
             </Link>
-            <Link href="/contact" className="">
+            <Link href="/contact" className="navlink">
               Contact
             </Link>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-3 md:gap-5 mt-2 sm:mt-0">
               <a
                 href="https://github.com/paininoa"
                 target="_blank"
-                className="flex gap-2 flex-center"
+                className="navlink_icon"
               >
                 <Image
                   src="/assets/images/github.svg"
@@ -38,7 +38,7 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/alessio-carnino-bb1301201/"
                 target="_blank"
-                className="flex gap-2 flex-center"
+                className="navlink_icon"
               >
                 <Image
                   src="/assets/images/linkedin.svg"
@@ -49,7 +49,8 @@ const Footer = () => {
               </a>
               <a
                 href="mailto: alessiocarnino.web@gmail.com"
-                className="flex gap-2 flex-center"
+                target="_blank"
+                className="navlink_icon"
               >
                 <Image
                   src="/assets/images/email.svg"
@@ -68,6 +69,7 @@ const Footer = () => {
           <a
             className="gradient inline-block"
             href="mailto: alessiocarnino.web@gmail.com"
+            target="_blank"
           >
             alessiocarnino.web@gmail.com
           </a>

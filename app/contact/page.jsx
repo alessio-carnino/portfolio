@@ -5,8 +5,9 @@ const Contact = () => {
         <h1 className="title_L">
           For any questions please mail me: <br />
           <a
-            className="gradient leading-relaxed"
+            className="gradient leading-relaxed text-[6vw] md:text-5xl lg:text-6xl"
             href="mailto: alessiocarnino.web@gmail.com"
+            target="_blank"
           >
             alessiocarnino.web@gmail.com
           </a>

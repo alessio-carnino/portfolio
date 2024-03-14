@@ -24,51 +24,51 @@ body {
 }
 
 .section {
-  @apply py-28;
+  @apply py-10 md:py-28;
 }
 
 .container_S {
-  @apply mx-auto w-[900px] max-w-86%;
+  @apply mx-auto w-[900px] max-w-[92%] md:max-w-86%;
 }
 
 .container {
-  @apply mx-auto w-1218px max-w-86%;
+  @apply mx-auto w-1218px max-w-[92%] md:max-w-86%;
 }
 
 .container_L {
-  @apply mx-auto w-1420px max-w-86%;
+  @apply mx-auto w-1420px max-w-[92%] md:max-w-86%;
 }
 
 .title_L {
-  @apply text-6xl  text-blue-title;
+  @apply text-4xl md:text-5xl lg:text-6xl text-blue-title;
 }
 
 .title_M {
-  @apply text-5xl font-bold text-blue-title;
+  @apply text-3xl md:text-5xl font-bold text-blue-title;
 }
 
 .title_S {
-  @apply text-3xl font-bold text-blue-title;
+  @apply text-2xl md:text-3xl font-bold text-blue-title;
 }
 
 .title_XS {
-  @apply text-2xl font-medium text-blue-title;
+  @apply text-xl md:text-2xl font-medium text-blue-title;
 }
 
 .paragraph_L {
-  @apply text-2xl;
+  @apply text-lg md:text-2xl;
 }
 
 .paragraph_M {
-  @apply text-lg;
+  @apply text-base md:text-lg;
 }
 
 .paragraph_S {
-  @apply text-base;
+  @apply text-sm md:text-base;
 }
 
 .paragraph_XS {
-  @apply text-sm;
+  @apply text-xs md:text-sm;
 }
 
 .button {
@@ -90,16 +90,19 @@ body {
 }
 
 .brand {
-  position: relative;
-  width: 222px;
-  height: 43px;
+  @apply relative w-[150px] sm:w-[170px]  md:w-[222px] md:h-[43px];
+}
+
+.navlink {
+  @apply text-xs md:text-lg;
+}
+
+.navlink_icon {
+  @apply relative w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7;
 }
 
 .hero_img_wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 36vw;
-  max-height: 900px;
+  @apply relative w-full min-h-[60vw] max-h-[400px] sm:min-h-[36vw] max-h-[900px];
 }
 
 .blob_img_1 {

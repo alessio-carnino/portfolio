@@ -29,7 +29,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en" className={raleway.className}>
       <body>
-        <main className="app paragraph_M overflow-hidden">
+        <main className="app text-sm md:text-lg overflow-hidden">
           <Nav />
           {children}
           <Footer />

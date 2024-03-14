@@ -21,8 +21,8 @@ const Home = () => {
   return (
     <>
       <section className="section py-14">
-        <div className="container_L grid grid-cols-2 items-center">
-          <div className="hero_content mb-8">
+        <div className="container_L sm:grid sm:grid-cols-2 items-center">
+          <div className="mb-8 text-center sm:text-left">
             <h1 className="title_L">
               Hi 👋, <br /> My name is
               <br />
@@ -47,12 +47,12 @@ const Home = () => {
       </section>
       <section className="section">
         <div className="container ">
-          <h2 className="title_M text-center mb-6">My Tech Stack</h2>
-          <p className="text-center mb-20">
+          <h2 className="title_M text-center mb-4 md:mb-6">My Tech Stack</h2>
+          <p className="text-center mb-14 md:mb-20">
             Technologies I've been working with recently
           </p>
 
-          <div className="grid grid-cols-6 gap-x-20 gap-y-14">
+          <div className="grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-6 md:gap-x-10 md:gap-y-14 lg:gap-x-20 ">
             {logos.map((logo, index) => (
               <img key={`logo-${index}`} src={logo} alt="logo" />
             ))}
@@ -77,10 +77,10 @@ const Home = () => {
         />
 
         <div className="container">
-          <h2 className="title_M text-center mb-6">Projects</h2>
-          <p className="text-center mb-20">Things I've built so far</p>
+          <h2 className="title_M text-center mb-4 md:mb-6">Projects</h2>
+          <p className="text-center mb-12 md:mb-20">Things I've built so far</p>
 
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 md:gap-14">
             <ProjectCard
               title="iNSPiRED"
               desc="descergerjon"
