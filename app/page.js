@@ -7,41 +7,70 @@ const logos = [
   "/assets/images/css.svg",
   "/assets/images/js.svg",
   "/assets/images/react.svg",
+  "/assets/images/node.svg",
+  "/assets/images/next.svg",
+  "/assets/images/vsc.svg",
   "/assets/images/gitt.svg",
+  "/assets/images/sass.svg",
   "/assets/images/bootstrap.svg",
   "/assets/images/tailwind.svg",
-  "/assets/images/sass.svg",
   "/assets/images/git.svg",
-  "/assets/images/vsc.svg",
-  "/assets/images/node.svg",
   "/assets/images/mongo.svg",
+  "/assets/images/vercel.svg",
+  "/assets/images/figma.svg",
+  "/assets/images/xd.svg",
+  "/assets/images/webflow.svg",
 ];
 
 const Home = () => {
   return (
-    <>
-      <section className="section py-14">
-        <div className="container_L sm:grid sm:grid-cols-2 items-center">
-          <div className="mb-8 text-center sm:text-left">
-            <h1 className="title_L">
+    <div className="relative">
+      <img
+        src="/assets/images/hero_bg.webp"
+        className="absolute z-[-1] w-[80vw] top-[-100px] right-[-10vw]"
+      />
+
+      <section className="section overflow-hidden ">
+        <div className="container_L sm:grid sm:grid-cols-2 sm:gap-6 items-center md:grid-cols-5  md:gap-0 lg:grid-cols-2">
+          <div className="mb-8 flex flex-col items-center text-center sm:items-start sm:text-left md:col-span-3 lg:col-span-1">
+            <h1 className="title_L ">
               Hi 👋, <br /> My name is
               <br />
-              <span className="font-semibold gradient">
-                Alessio Carnino
-              </span>{" "}
+              <span className="font-bold gradient">Alessio Carnino</span>
               <br />
-              build things for web
+              Full-stack Developer
             </h1>
+            <p className="paragrpah_L pt-4 pb-8 max-w-xl">
+              I'm a passionate web developer with a knack for crafting great web
+              experiences. Starting my journey as a web designer and developer
+              using Webflow and other no-code tools - check out my{" "}
+              <a
+                href="https://alessiocarnino.webflow.io/"
+                target="_blank"
+                className="font-semibold gradient"
+              >
+                Webflow portfolio
+              </a>{" "}
+              - , I quickly realized the limitless potential of crafting
+              captivating online experiences. I've since delved into the world
+              of coding, mastering HTML, CSS, SASS, Tailwind, Bootstrap,
+              JavaScript, React, Node.js, Next.js, and more.
+            </p>
+            <Link href="/contact">
+              <button className="button">GET IN TOUCH</button>
+            </Link>
           </div>
 
-          <div className="hero_img_wrapper">
-            <Image
-              src="/assets/images/hero-img-min.png"
-              alt="Alessio Carnino profile image"
-              layout="fill"
-              sizes="100%"
-              objectFit="contain"
-            />
+          <div className="relative sm:w-2/3 h-full md:col-span-2 lg:col-span-1">
+            <div className="hero_img_wrapper">
+              <Image
+                src="/assets/images/hero-img-min.png"
+                alt="Alessio Carnino profile image"
+                layout="fill"
+                sizes="100%"
+                objectFit="contain"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -81,39 +110,45 @@ const Home = () => {
           <p className="text-center mb-12 md:mb-20">Things I've built so far</p>
 
           <div className="flex flex-col gap-10 md:gap-14">
-            <ProjectCard
-              title="iNSPiRED"
-              desc="descergerjon"
-              img="/assets/images/img1.jpg"
-              stack="HTML, JavaScript, SASS, React"
-              page="/project1"
-              website="https://alessiocarnino.webflow.io/"
-              github="https://github.com/paininoa"
-            />
+            <div className="drop-shadow-2xl">
+              <ProjectCard
+                title="iNSPiRED"
+                desc="A simple but visually appealing layout, featuring vibrant colors and clear navigation elements. The website, inspired by dribbble.com, is a comprehensive platform showcasing a variety of projects created by graphics, designers and artists. Overall, the website exudes professionalism and creativity, inviting users to explore its content with ease and curiosity."
+                img="/assets/images/inspired_cover.webp"
+                stack="HTML, SASS, React, Express, Node.js, MongoDB, Mongoose, Vercel"
+                page="/project1"
+                website="https://final-project-front-omega.vercel.app/"
+                github="https://github.com/paininoa/final-project-front"
+                github_back="https://github.com/paininoa/final-project-back"
+              />
+            </div>
 
-            <ProjectCard
-              title="Promptopia"
-              desc="descergerjon"
-              img="/assets/images/img2.jpg"
-              stack="HTML, JavaScript, SASS, React"
-              page="/project2"
-              website="https://alessiocarnino.webflow.io/"
-              github="https://github.com/paininoa"
-            />
-
-            <ProjectCard
-              title="Title3"
-              desc="descergerjon"
-              img="/assets/images/img3.jpg"
-              stack="HTML, JavaScript, SASS, React"
-              page="/project3"
-              website="https://alessiocarnino.webflow.io/"
-              github="https://github.com/paininoa"
-            />
+            <div className="drop-shadow-2xl">
+              <ProjectCard
+                title="Promptopia"
+                desc="Promptopia is an open-source AI propmting tool for modern world to discover, create and share creative prompts. Inspire and get inspired to feed AI content generators with the best ideas."
+                img="/assets/images/img2.jpg"
+                stack="HTML, JavaScript, Tailwind, Next.js, MongoDB, Vercel"
+                page="/project2"
+                website="https://promptopia-lyart-eight.vercel.app/"
+                github="https://github.com/paininoa/promptopia"
+              />
+            </div>
+            <div className="drop-shadow-2xl">
+              <ProjectCard
+                title="Title3"
+                desc="descergerjon"
+                img="/assets/images/inspired_cover.webp"
+                stack="HTML, JavaScript, SASS, React"
+                page="/project3"
+                website="https://alessiocarnino.webflow.io/"
+                github="https://github.com/paininoa"
+              />
+            </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

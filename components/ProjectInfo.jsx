@@ -12,18 +12,17 @@ const ProjectInfo = ({
 }) => {
   return (
     <div>
-      <section className="section relative">
+      <section className="section lg:min-h-screen relative">
         <img
           src="/assets/images/bg.webp"
           alt="Decorative image"
-          className="absolute scale-150 sm:scale-100 right-0 bottom-0 sm:bottom-[-10rem] lg:bottom-[-15rem] z-[-1] "
+          className="absolute scale-150 sm:scale-100 right-0 bottom-0 sm:bottom-[-4rem] lg:bottom-[-2rem] z-[-1] "
         />
         <div className="container ">
-          <div className="w-full md:w-1/2">
-            <h1 className="title_L">{title}</h1>
-            <p className="paragraph_L font-semibold mt-3 md:mt-4 mb-5 md:mb-8">
-              {subtitle}
-            </p>
+          <div className="w-full md:w-2/3">
+            <p className="paragraph_L font-semibold mb-1 md:mb-2">{subtitle}</p>
+            <h1 className="title_L font-semibold mb-4 md:mb-6">{title}</h1>
+
             <p>{shortDesc}</p>
             <div className="flex flex-col items-start gap-4 md:gap-5 mt-8">
               <a href={website} target="_blank" className="button">
@@ -64,7 +63,7 @@ const ProjectInfo = ({
 
       <section className="pb-12 md:pb-[12rem]">
         <div className="container_S">
-          <div className="relative m-auto w-full sm:w-[80%] lg:w-full  drop-shadow-2xl">
+          <div className="relative m-auto w-full sm:w-[80%] lg:w-full drop-shadow-2xl mt-[-0.5rem] lg:mt-[-10rem]">
             <Image
               src={img}
               alt="Project image"

@@ -27,7 +27,7 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en" className={raleway.className}>
+    <html lang="en" className={maven_pro.className}>
       <body>
         <main className="app text-sm md:text-lg overflow-hidden">
           <Nav />
