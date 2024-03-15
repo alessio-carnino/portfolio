@@ -128,21 +128,10 @@ const Home = () => {
                 title="Promptopia"
                 desc="Promptopia is an open-source AI propmting tool for modern world to discover, create and share creative prompts. Inspire and get inspired to feed AI content generators with the best ideas."
                 img="/assets/images/img2.jpg"
-                stack="HTML, JavaScript, Tailwind, Next.js, MongoDB, Vercel"
+                stack="HTML, JavaScript, Tailwind, Next.js, Google Auth, MongoDB, Vercel"
                 page="/project2"
                 website="https://promptopia-lyart-eight.vercel.app/"
                 github="https://github.com/paininoa/promptopia"
-              />
-            </div>
-            <div className="drop-shadow-2xl">
-              <ProjectCard
-                title="Title3"
-                desc="descergerjon"
-                img="/assets/images/inspired_cover.webp"
-                stack="HTML, JavaScript, SASS, React"
-                page="/project3"
-                website="https://alessiocarnino.webflow.io/"
-                github="https://github.com/paininoa"
               />
             </div>
           </div>

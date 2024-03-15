@@ -11,10 +11,10 @@ const ProjectCard = ({
   github_back,
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row bg-white rounded-2xl md:rounded-3xl overflow-hidden hover:opacity-90 transition-opacity">
+    <div className="flex flex-col sm:flex-row bg-white rounded-2xl md:rounded-3xl overflow-hidden hover:opacity-90 transition-opacity ">
       <a className="w-full h-[42vw] sm:w-6/12 sm:h-[auto] relative" href={page}>
         <Image
-          className="inline-block"
+          className="inline-block  rounded-tl-3xl rounded-bl-3xl"
           src={img}
           alt="logo"
           layout="fill"
