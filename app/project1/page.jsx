@@ -11,19 +11,9 @@ const Project1 = () => {
         
         To create this app, I used all the technologies learned during the course. Firstly, I worked on the backend using Node.js and Mongoose with MongoDB to establish collections and gather user information with an authentication system. Secondly, I focused on the frontend with React and Express to develop an interface that reflected the design I had previously crafted with Figma using Sass and integrating Bootstrap components. I then connected frontend and backend to ensure seamless interaction with the collections. Finally, I deployed the project using Vercel to make it accessible to all users."
         desc="A simple but visually appealing layout, featuring vibrant colors and clear navigation elements. The website, inspired by dribbble.com, is a comprehensive platform showcasing a variety of projects created by graphics, designers and artists. Overall, the website exudes professionalism and creativity, inviting users to explore its content with ease and curiosity."
-        git1="https://github.com/paininoa/final-project-front"
-        git2="https://github.com/paininoa/final-project-back"
+        git1="https://github.com/alessio-carnino/final-project-front"
+        git2="https://github.com/alessio-carnino/final-project-back"
         website="https://final-project-front-omega.vercel.app/"
-        img="/assets/images/inspired.jpg"
-      />
-
-      <ProjectInfo
-        title="Promptopia"
-        subtitle="Discover & Share AI-Powered Prompts"
-        shortDesc=""
-        desc="Promptopia is an open-source AI propmting tool for modern world to discover, create and share creative prompts. Inspire and get inspired to feed AI content generators with the best ideas."
-        git1="https://github.com/paininoa/promptopia"
-        website="https://promptopia-lyart-eight.vercel.app/"
         img="/assets/images/inspired.jpg"
       />
     </>

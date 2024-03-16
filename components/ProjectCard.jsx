@@ -11,17 +11,20 @@ const ProjectCard = ({
   github_back,
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row bg-white rounded-2xl md:rounded-3xl overflow-hidden hover:opacity-90 transition-opacity ">
-      <a className="w-full h-[42vw] sm:w-6/12 sm:h-[auto] relative" href={page}>
+    <div className="flex flex-col sm:flex-row bg-white rounded-xl md:rounded-2xl lg:rounded-3xl hover:opacity-90 transition-opacity ">
+      <a
+        className="w-full h-[42vw] sm:w-6/12 sm:h-[auto] relative "
+        href={page}
+      >
         <Image
-          className="inline-block  rounded-tl-3xl rounded-bl-3xl"
+          className="bg-gradient-to-tr from-gradient-start to-gradient-end inline-block rounded-tl-xl rounded-tr-xl sm:rounded-tl-xl sm:rounded-tr-[0] sm:rounded-bl-xl md:rounded-tl-2xl md:rounded-bl-2xl  lg:rounded-tl-3xl lg:rounded-bl-3xl"
           src={img}
           alt="logo"
           layout="fill"
-          objectFit="cover top"
+          objectFit="contain"
         />
       </a>
-      <div className="w-full sm:w-6/12 p-6 md:p-10">
+      <div className="w-full sm:w-6/12 p-6 sm:p-5 md:p-6 lg:p-10">
         <a href={page}>
           <h3 className="title_S mb-3 md:mb-4">{title}</h3>
         </a>

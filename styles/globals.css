@@ -26,31 +26,31 @@ body {
 }
 
 .section {
-  @apply py-10 md:py-28;
+  @apply py-10 md:py-20 lg:py-28;
 }
 
 .container_S {
-  @apply mx-auto w-[900px] max-w-[92%] md:max-w-86%;
+  @apply mx-auto w-[900px] max-w-[92%] lg:max-w-86%;
 }
 
 .container {
-  @apply mx-auto w-1218px max-w-[92%] md:max-w-86%;
+  @apply mx-auto w-1218px max-w-[92%] lg:max-w-86%;
 }
 
 .container_L {
-  @apply mx-auto w-1420px max-w-[92%] md:max-w-86%;
+  @apply mx-auto w-1420px max-w-[92%] lg:max-w-86%;
 }
 
 .title_L {
-  @apply text-4xl font-medium md:text-5xl lg:text-6xl text-blue-title;
+  @apply text-5xl font-medium md:text-[2.5rem] lg:text-6xl text-blue-title;
 }
 
 .title_M {
-  @apply text-3xl md:text-5xl font-semibold text-blue-title;
+  @apply text-4xl lg:text-5xl font-semibold text-blue-title;
 }
 
 .title_S {
-  @apply text-2xl md:text-3xl font-semibold text-blue-title;
+  @apply text-3xl lg:text-4xl font-semibold text-blue-title;
 }
 
 .title_XS {
@@ -104,7 +104,7 @@ body {
 }
 
 .hero_img_wrapper {
-  @apply relative sm:absolute object-left-top w-full min-h-[60vw] max-h-[400px] sm:top-auto sm:min-w-[60vw] sm:min-h-[50vw] sm:max-h-[900px] md:min-w-[55vw] md:min-h-[45vw] lg:relative lg:min-w-[40vw] lg:min-h-[40vw] lg:gap-10;
+  @apply relative sm:absolute object-left-top w-full min-h-[60vw] max-h-[400px] sm:top-auto sm:min-w-[60vw] sm:min-h-[50vw] sm:max-h-[900px] md:min-w-[55vw] md:min-h-[45vw] sm:ml-[-3rem] lg:ml-[0rem] lg:relative lg:min-w-[40vw] lg:min-h-[40vw] lg:gap-10;
 }
 
 .blob_img_1 {

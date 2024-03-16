@@ -23,7 +23,7 @@ const ProjectInfo = ({
             <p className="paragraph_L font-semibold mb-1 md:mb-2">{subtitle}</p>
             <h1 className="title_L font-semibold mb-4 md:mb-6">{title}</h1>
 
-            <p>{shortDesc}</p>
+            <p className="paragraph-L">{shortDesc}</p>
             <div className="flex flex-col items-start gap-4 md:gap-5 mt-8">
               <a href={website} target="_blank" className="button">
                 <Image

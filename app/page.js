@@ -30,9 +30,9 @@ const Home = () => {
         className="absolute z-[-1] w-[80vw] top-[-100px] right-[-10vw]"
       />
 
-      <section className="section overflow-hidden ">
-        <div className="container_L sm:grid sm:grid-cols-2 sm:gap-6 items-center md:grid-cols-5  md:gap-0 lg:grid-cols-2">
-          <div className="mb-8 flex flex-col items-center text-center sm:items-start sm:text-left md:col-span-3 lg:col-span-1">
+      <section className="py-10 md:py-15 lg:py-20 overflow-hidden ">
+        <div className="container_L sm:grid sm:grid-cols-2 sm:gap-6 items-center md:grid-cols-5 md:gap-0 lg:grid-cols-2">
+          <div className="mb-8 z-10 flex flex-col items-center text-center sm:items-start sm:text-left md:col-span-3 lg:col-span-1">
             <h1 className="title_L ">
               Hi 👋, <br /> My name is
               <br />
@@ -78,7 +78,7 @@ const Home = () => {
         <div className="container ">
           <h2 className="title_M text-center mb-4 md:mb-6">My Tech Stack</h2>
           <p className="text-center mb-14 md:mb-20">
-            Technologies I've been working with recently
+            Technologies I've been working with recently.
           </p>
 
           <div className="grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-6 md:gap-x-10 md:gap-y-14 lg:gap-x-20 ">
@@ -107,7 +107,9 @@ const Home = () => {
 
         <div className="container">
           <h2 className="title_M text-center mb-4 md:mb-6">Projects</h2>
-          <p className="text-center mb-12 md:mb-20">Things I've built so far</p>
+          <p className="text-center mb-12 md:mb-20">
+            The latest projects I have worked on.
+          </p>
 
           <div className="flex flex-col gap-10 md:gap-14">
             <div className="drop-shadow-2xl">
@@ -118,7 +120,7 @@ const Home = () => {
                 stack="HTML, SASS, React, Express, Node.js, MongoDB, Mongoose, Vercel"
                 page="/project1"
                 website="https://final-project-front-omega.vercel.app/"
-                github="https://github.com/paininoa/final-project-front"
+                github="https://github.com/alessio-carnino/final-project-front"
                 github_back="https://github.com/paininoa/final-project-back"
               />
             </div>
@@ -130,8 +132,8 @@ const Home = () => {
                 img="/assets/images/img2.jpg"
                 stack="HTML, JavaScript, Tailwind, Next.js, Google Auth, MongoDB, Vercel"
                 page="/project2"
-                website="https://promptopia-lyart-eight.vercel.app/"
-                github="https://github.com/paininoa/promptopia"
+                website="https://alessio-promptopia.vercel.app/"
+                github="https://github.com/alessio-carnino/promptopia"
               />
             </div>
           </div>
