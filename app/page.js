@@ -40,7 +40,7 @@ const Home = () => {
               <br />
               Full-stack Developer
             </h1>
-            <p className="paragrpah_L pt-4 pb-8 max-w-xl">
+            <p className="paragrpah_L pt-4 pb-4 md:pb-8 max-w-xl">
               I'm a passionate web developer with a knack for crafting great web
               experiences. Starting my journey as a web designer and developer
               using Webflow and other no-code tools - check out my{" "}
