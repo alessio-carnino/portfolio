@@ -27,7 +27,7 @@ const Home = () => {
     <div className="relative">
       <img
         src="/assets/images/hero_bg.webp"
-        className="absolute z-[-1] w-[80vw] top-[-100px] right-[-10vw]"
+        className="absolute z-[-1] w-[100vw] lg:w-[80vw] top-[-100px] right-[-10vw]"
       />
 
       <section className="py-10 md:py-15 lg:py-20 overflow-hidden ">
