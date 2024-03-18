@@ -10,7 +10,7 @@ const Project1 = () => {
         desc="Promptopia is an open-source AI propmting tool for modern world to discover, create and share creative prompts. Inspire and get inspired to feed AI content generators with the best ideas."
         git1="https://github.com/alessio-carnino/promptopia"
         website="https://alessio-promptopia.vercel.app/"
-        img="/assets/images/inspired.jpg"
+        img="/assets/images/promptopia.webp"
       />
     </>
   );

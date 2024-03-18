@@ -129,7 +129,7 @@ const Home = () => {
               <ProjectCard
                 title="Promptopia"
                 desc="Promptopia is an open-source AI propmting tool for modern world to discover, create and share creative prompts. Inspire and get inspired to feed AI content generators with the best ideas."
-                img="/assets/images/img2.jpg"
+                img="/assets/images/promptopia_cover.webp"
                 stack="HTML, JavaScript, Tailwind, Next.js, Google Auth, MongoDB, Vercel"
                 page="/project2"
                 website="https://alessio-promptopia.vercel.app/"
