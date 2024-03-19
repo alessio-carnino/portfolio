@@ -25,7 +25,7 @@ const Nav = () => {
           </Link>
           <div className="flex items-center gap-3 md:gap-5">
             <a
-              href="https://github.com/paininoa"
+              href="https://github.com/alessio-carnino"
               target="_blank"
               className="navlink_icon"
             >
