@@ -16,7 +16,7 @@ const raleway = Raleway({
 
 export const metadata = {
   title: "Alessio Carnino Portfolio",
-  descriptions: "Full Stack Developer Portfolio",
+  descriptions: `Hi 👋, My name is Alessio Carnino and I am a Full-stack Developer`,
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
