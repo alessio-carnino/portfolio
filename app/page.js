@@ -136,6 +136,18 @@ const Home = () => {
                 github="https://github.com/alessio-carnino/promptopia"
               />
             </div>
+
+            <div className="drop-shadow-2xl">
+              <ProjectCard
+                title="Quiz App"
+                desc="Explore a world of trivia and brain-teasers at your fingertips. Engage in stimulating quizzes covering a wide range of topics."
+                img="/assets/images/quizapp_cover.webp"
+                stack="HTML, CSS, TypeScript, React, Vercel"
+                page="/project3"
+                website="https://quiz-app-alessio.vercel.app/"
+                github="https://github.com/alessio-carnino/quiz-app"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import ProjectInfo from "@/components/ProjectInfo";
 
-const Project1 = () => {
+const Project2 = () => {
   return (
     <>
       <ProjectInfo
@@ -16,4 +16,4 @@ const Project1 = () => {
   );
 };
 
-export default Project1;
+export default Project2;
