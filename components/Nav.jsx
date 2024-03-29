@@ -16,9 +16,16 @@ const Nav = () => {
           />
         </Link>
 
-        <div className="flex items-center gap-3 sm:gap-5 md:gap-10">
+        <div className="flex items-center gap-3 sm:gap-4 md:gap-8">
           <Link href="/#projects" className="navlink hidden sm:block">
             Projects
+          </Link>
+          <Link
+            href="https://alessiocarnino.webflow.io/"
+            target="_blank"
+            className="navlink hidden sm:block tracking-tight"
+          >
+            Webflow Portfolio
           </Link>
           <Link href="/contact" className="navlink hidden sm:block">
             Contact

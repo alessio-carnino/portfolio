@@ -19,6 +19,13 @@ const Footer = () => {
             <Link href="/#projects" className="navlink">
               Projects
             </Link>
+            <Link
+              href="https://alessiocarnino.webflow.io/"
+              target="_blank"
+              className="navlink tracking-tight"
+            >
+              Webflow Portfolio
+            </Link>
             <Link href="/contact" className="navlink">
               Contact
             </Link>

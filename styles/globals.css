@@ -96,7 +96,7 @@ body {
 }
 
 .navlink {
-  @apply text-xs md:text-lg hover:opacity-70 transition-opacity;
+  @apply text-xs md:text-lg hover:opacity-90 hover:text-blue-title transition-all;
 }
 
 .navlink_icon {
