@@ -30,6 +30,14 @@ const Nav = () => {
           <Link href="/contact" className="navlink hidden sm:block">
             Contact
           </Link>
+
+          <Link
+            href="/https://uploads-ssl.webflow.com/6389024564c0eaae543c5b10/660d6d7da79fae6043ece067_Alessio%20Carnino%20CV.pdf"
+            target="_blank"
+            className="navlink hidden sm:block"
+          >
+            CV
+          </Link>
           <div className="flex items-center gap-3 md:gap-5">
             <a
               href="https://github.com/alessio-carnino"
