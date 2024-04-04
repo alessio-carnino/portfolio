@@ -30,7 +30,7 @@ const Footer = () => {
               Contact
             </Link>
             <Link
-              href="/https://uploads-ssl.webflow.com/6389024564c0eaae543c5b10/660d6d7da79fae6043ece067_Alessio%20Carnino%20CV.pdf"
+              href="https://uploads-ssl.webflow.com/6389024564c0eaae543c5b10/660e734fe388d37a665410f3_Alessio%20Carnino%20CV.pdf"
               target="_blank"
               className="navlink hidden sm:block"
             >
