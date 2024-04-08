@@ -32,7 +32,7 @@ const Nav = () => {
           </Link>
 
           <Link
-            href="https://uploads-ssl.webflow.com/6389024564c0eaae543c5b10/660e734fe388d37a665410f3_Alessio%20Carnino%20CV.pdf"
+            href="https://uploads-ssl.webflow.com/6389024564c0eaae543c5b10/6613b0fd56d47921c8b1c08b_Alessio%20Carnino%20CV.pdf"
             target="_blank"
             className="navlink hidden sm:block"
           >
