@@ -6,16 +6,21 @@ const logos = [
   "/assets/images/html.svg",
   "/assets/images/css.svg",
   "/assets/images/js.svg",
+  "/assets/images/typescript.svg",
   "/assets/images/react.svg",
-  "/assets/images/node.svg",
   "/assets/images/next.svg",
-  "/assets/images/vsc.svg",
   "/assets/images/sass.svg",
   "/assets/images/bootstrap.svg",
   "/assets/images/tailwind.svg",
-  "/assets/images/git.svg",
+
+  "/assets/images/node.svg",
   "/assets/images/mongo.svg",
+
+  "/assets/images/vsc.svg",
+
+  "/assets/images/git.svg",
   "/assets/images/vercel.svg",
+
   "/assets/images/figma.svg",
   "/assets/images/xd.svg",
   "/assets/images/webflow.svg",
