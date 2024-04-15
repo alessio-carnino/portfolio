@@ -10,7 +10,6 @@ const logos = [
   "/assets/images/node.svg",
   "/assets/images/next.svg",
   "/assets/images/vsc.svg",
-  "/assets/images/gitt.svg",
   "/assets/images/sass.svg",
   "/assets/images/bootstrap.svg",
   "/assets/images/tailwind.svg",
