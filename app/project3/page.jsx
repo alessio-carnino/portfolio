@@ -6,7 +6,7 @@ const Project3 = () => {
       <ProjectInfo
         title="Quiz App"
         subtitle="The Ultimate Quiz Challenge"
-        shortDesc="A very simple app I developed as a project to deepen my understanding of TypeScript. "
+        shortDesc="A very simple app I developed as a project to start learning TypeScript."
         desc="Explore a world of trivia and brain-teasers at your fingertips. Engage in stimulating quizzes covering a wide range of topics. Sharpen your mind and enjoy hours of entertainment with our user-friendly interface."
         git1="https://github.com/alessio-carnino/quiz-app"
         website="https://quiz-app-alessio.vercel.app/"

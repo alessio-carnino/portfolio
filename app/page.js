@@ -6,7 +6,6 @@ const logos = [
   "/assets/images/html.svg",
   "/assets/images/css.svg",
   "/assets/images/js.svg",
-  "/assets/images/typescript.svg",
   "/assets/images/react.svg",
   "/assets/images/next.svg",
   "/assets/images/sass.svg",
